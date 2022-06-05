@@ -1,0 +1,9 @@
+<form #ingredientForm="ngForm" (ngSubmit)="newIngredient(ingredientForm)">
+    <ion-item>
+        <ion-input type="text" name="ingName" placeholder="Ingredient" ngModel required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input type="number"name="ingVal" placeholder="Amount" ngModel required></ion-input>
+    </ion-item>
+    <ion-button type="submit" expand="block" color="success">Add Ingredient</ion-button>
+</form>

@@ -1,0 +1,6 @@
+<ion-content>
+    <app-recipe-options [recipe]="recipe"></app-recipe-options>
+    <app-ingredient-input [recipe]="recipe" (newIngredientEvent)="recipe.addIngredient($event)"></app-ingredient-input>
+    <div *ngFor="let ingredient of recipe.ingredients">{{ ingredient.name }}</div>
+</ion-content>
+

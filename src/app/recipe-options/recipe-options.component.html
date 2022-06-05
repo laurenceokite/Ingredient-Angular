@@ -1,0 +1,17 @@
+<ion-segment value="{{recipe.system}}">
+    <ion-segment-button value="metric">
+      <ion-label>Metric</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="us">
+      <ion-label>US</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+<ion-segment value="{{recipe.units}}" (ionChange)="changeUnit($event)">
+    <ion-segment-button value="weight">
+        <ion-label>Weight</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="volume">
+        <ion-label>Volume</ion-label>
+    </ion-segment-button>
+</ion-segment>
